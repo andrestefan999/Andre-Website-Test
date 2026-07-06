@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+section {
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+
+header nav a {
+    transition: color 0.2s ease-in-out;
+}
+
+.profile_image {
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.profile_image:hover {
+    transform: translateY(-5px); 
+}
+
+article {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+    border: none !important; 
+}
+
+section, article {
+    scroll-margin-top: 70px;
+}
+
+.dark {
+    background-color: #cde9a9;
+}
+
+.full-width-nav {
+    background-color: rgba(232, 245, 233, 0.8) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    margin-bottom: 2rem;       
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.full-width-nav nav, 
+.full-width-nav ul,
+.full-width-nav li {
+    background: transparent !important;
+}
+
+.contact-section-wrapper {
+    background-color: #f4f4f4;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    border-top: 1px solid #e2e8f0;
+}
+
+.full-width-nav a {
+    color: #2e7d32;          
+    font-weight: bold;
+}
+
+.full-width-nav a:hover {
+    color: #1b5e20;         
+}
+
+.full-width-nav {
+    margin-bottom: -1rem; 
+}
+
+.stats {
+    padding-top: 1rem !important; 
+}
+
+.profile_image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+
+h1 {
+    --pico-font-family: Pacifico, cursive;
+    --pico-font-weight: 400;
+    --pico-typography-spacing-vertical: 0.5rem;
+}

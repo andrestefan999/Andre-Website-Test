@@ -1,0 +1,28 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" width="144" height="144">
+	<style>
+		.s0 { fill: #304a6a } 
+		.s1 { fill: #ffffff } 
+		.s2 { fill: #e3c697 } 
+	</style>
+	<g id="Layer 1">
+		<path id="Shape 1" fill-rule="evenodd" class="s0" d=""/>
+		<path id="Shape 19" fill-rule="evenodd" class="s1" d="m144 0v144h-144v-144z"/>
+		<path id="Shape 2" fill-rule="evenodd" class="s0" d="m138 40v5h-10v-5z"/>
+		<path id="Shape 3" fill-rule="evenodd" class="s0" d="m137.93 40v70h-4.86v-70z"/>
+		<path id="Shape 4" fill-rule="evenodd" class="s0" d="m15 40v5h-10v-5z"/>
+		<path id="Shape 5" fill-rule="evenodd" class="s0" d="m10 40v70h-5v-70z"/>
+		<path id="Shape 6" fill-rule="evenodd" class="s0" d="m74 51v69h-5v-69z"/>
+		<path id="Shape 7" fill-rule="evenodd" class="s0" d="m9 110.14l0.26-4.11 7.71-0.26 6.69 0.77 7.97 0.77 8.48 1.8 8.48 2.32 9 3.08 5.66 3.09-3.86 2.31-13.11-3.86-8.48-2.31-10.03-2.57-10.03-0.77"/>
+		<path id="Shape 8" fill-rule="evenodd" class="s0" d="m133.75 105.46l-15 0.75-11.25 2-13 3.25-14 5.25 4 3.5 8.5-3.5 7.75-3 8.5-1.25 9.5-1.75 14.25-1"/>
+		<path id="Shape 9" fill-rule="evenodd" class="s0" d="m61.83 116.11l2.64 3.69 3.43 2.38 3.43 1.05 4.22-2.11 4.48-5.01 4.22 3.69-3.17 4.49-6.06 2.9-5.81 0.52-6.33-2.37-4.48-5.54"/>
+		<path id="Shape 10" fill-rule="evenodd" class="s2" d="m113 28v60h-5v-60z"/>
+		<path id="Shape 11" fill-rule="evenodd" class="s2" d="m126 36v63h-5v-63z"/>
+		<path id="Shape 12" fill-rule="evenodd" class="s2" d="m35 27v60h-5v-60z"/>
+		<path id="Shape 13" fill-rule="evenodd" class="s2" d="m22 35v63h-5v-63z"/>
+		<path id="Shape 14" fill-rule="evenodd" class="s2" d="m30.75 86.71l12.5 5.75 8.75 6.25 5.75 3.75 4.75 6.75-10.75-6-9.75-4.5-7.75-2.5-12-2.25-0.25 4.5 8.25 2 5.5 1 8.25 3 7.75 4 7.5 4.75 6.5 4 3.25 2.75 0.5-10.25-8.25-9.5-5.25-4.75-6.5-4.5-6.5-4-8-3.5"/>
+		<path id="Shape 15" fill-rule="evenodd" class="s2" d="m111 87.46l-8.25 3.75-7 4.5-5.75 4-5.25 5-3.75 4.5 14-7.5 13-4.75 9.25-2 6.25-1.5-0.75 5.25-9.5 1.5-11.5 3.75-11 5-7.5 4.75-5 3-4.25 3.25 0.5-9.25 4.75-7.5 5.75-6 11-7.75 10.25-4.5 4-1.25"/>
+		<path id="Shape 16" fill-rule="evenodd" class="s2" d="m17.75 30.71l9.75 3-0.25 5-10-3"/>
+		<path id="Shape 17" fill-rule="evenodd" class="s2" d="m116.75 33.33l9.06-2.87 0.48 5.73-9.3 1.43"/>
+		<path id="Shape 18" fill-rule="evenodd" class="s2" d="m30.5 22.96l18.75 5.25 11 6 7 6 4.75 5.75 8.25-8.25 6.25-4.25 8-4.5 9-3.25 9.25-2.75 0.25 6.75-4.75-0.25-7.25 2.5-8 2.25-8 5.5-6.25 6-4.75 5.25-4.75 0.5-5-7-9.5-6.75-8.5-5-8.75-2.5-6.75-1.25"/>
+	</g>
+</svg>

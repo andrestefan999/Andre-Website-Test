@@ -15,8 +15,97 @@
             width: 100% !important;
             position: relative;
         }
+
+        /* --- Smooth Cascading Entrance Animation --- */
+        @keyframes subtleEntrance {
+            0% {
+                opacity: 0;
+                transform: translateY(24px) scale(0.995);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        header.full-width-nav {
+            animation: subtleEntrance 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        body > div, body > section {
+            opacity: 0;
+            animation: subtleEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Staggered delays for a refined cascading load */
+        body > div:nth-of-type(1) { animation-delay: 0.15s; }
+        body > section:nth-of-type(1) { animation-delay: 0.25s; }
+        body > section:nth-of-type(2) { animation-delay: 0.35s; }
+        body > section:nth-of-type(3) { animation-delay: 0.45s; }
+        body > section:nth-of-type(4) { animation-delay: 0.55s; }
+
+        /* --- Typography Polish --- */
+        h1, h2, h3, h4 {
+            letter-spacing: -0.025em !important;
+        }
+
+        /* --- Card Elevation & Lift Micro-Interactions --- */
+        article {
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                        box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        article:hover {
+            transform: translateY(-5px) !important;
+            box-shadow: 0 16px 32px rgba(46, 90, 46, 0.12) !important;
+        }
+
+        /* --- Disable Hover Shift on Interactive Boxes (Schedule & FAQ) --- */
+        #schedule-session article,
+        #schedule-session article:hover,
+        #faq article,
+        #faq article:hover {
+            transform: none !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+        }
+
+        /* --- Glassmorphism Effect Class --- */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.88) !important;
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.4) !important;
+        }
+
+        /* --- Premium CTA Button Styles --- */
+        .btn-premium {
+            display: block;
+            width: 100%;
+            padding: 0.8rem 1.25rem !important;
+            background: linear-gradient(135deg, #3b7a3b 0%, #2e5a2e 100%) !important;
+            color: #ffffff !important;
+            text-align: center;
+            border: none !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 14px rgba(59, 122, 59, 0.25) !important;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        .btn-premium:hover {
+            box-shadow: 0 6px 20px rgba(59, 122, 59, 0.4) !important;
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+        }
+
+        /* --- Custom Scroll Margin Offsets --- */
+        #contact {
+            scroll-margin-top: 30px !important;
+        }
+
         section, article {
-            scroll-margin-top: 90px !important;
+            scroll-margin-top: 0px !important;
         }
 
         /* --- Tablet & Mobile Styles (Screens smaller than 1024px) --- */
@@ -45,8 +134,8 @@
             header nav ul:last-child {
                 display: grid !important;
                 grid-template-columns: repeat(3, 1fr) !important;
-                justify-content: center !important; /* Centers the grid tracks horizontally */
-                justify-items: center !important;   /* Centers links inside each grid cell */
+                justify-content: center !important; 
+                justify-items: center !important;   
                 gap: 2px 4px !important;
                 width: 100% !important;
                 text-align: center !important;
@@ -123,12 +212,12 @@
 <div style="width: 100%; overflow: hidden;">
     <section id="about-me" class="stats" style="position: relative; padding: 2rem 0 !important; margin-top: 1rem; margin-bottom: 0rem !important; background-image: url('Images/landscape.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
         <div class="container" style="max-width: 1250px; padding: 0rem 1rem;">
-            <div style="background-color: rgba(255, 255, 255, 0.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 3rem 2rem 1.5rem 2rem; border-radius: 16px; border: 1px solid rgba(207, 226, 207, 0.6); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
+            <div class="glass-panel" style="padding: 3rem 2rem 1.5rem 2rem; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
                 <h2 style="text-align: center; margin-top: -1rem; margin-bottom: 2rem; color: #2e5a2e;">Meet Your Online Tutor</h2>
                 <div class="grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.8fr 1.2fr;">
                     <div style="text-align: center;">
-                        <img src="Images/Andre.png" alt="Andre Mitchell - HSC Physics and Mathematics Tutor in Sydney" class="profile_image" style="box-shadow: 0 8px 20px rgba(0,0,0,0.1); max-height: 180px; width: auto;">
-                        <h3 style="margin-top: -0.6rem; margin-bottom: 0.5rem; color: #1a331a;">Andre Mitchell</h3>
+                        <img src="Images/Andre.png" alt="Andre Mitchell - HSC Physics and Mathematics Tutor in Sydney" class="profile_image" style="box-shadow: 0 8px 20px rgba(0,0,0,0.1); max-height: 180px; width: auto; border-radius: 50%;">
+                        <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem; color: #1a331a;">Andre Mitchell</h3>
                         <p style="margin: 0; font-size: 0.95rem; line-height: 1.4; color: #555;">
                             NSW Physics & Mathematics Specialist<br>
                             2024 Bachelor of Medical Sciences<br>
@@ -136,10 +225,10 @@
                         </p>
                     </div>
                     <div style="margin-bottom: 0; padding-bottom: 0;">
-                        <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: #2e5a2e;">Hi! I'm Andre.</h3>
+                        <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: #2e5a2e;">Hi! I'm Andre</h3>
                         <p style="text-align: justify; font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.25rem; color: #234423;">
                             I am passionate about helping high school students unlock their full potential in <strong>NSW Physics and Mathematics</strong>, by breaking down complex syllabus dot points into clear concepts.  
-                            <strong><a href="#contact" style="color: #3b7a3b; text-decoration: underline;">Book a $30 half-price first session here</a></strong> to conquer your exam.
+                            <strong><a href="#contact" style="color: #3b7a3b; text-decoration: underline;">Book a $30 half-price first session here</a></strong>.
                         </p>
                         <div class="grid" style="margin-top: 1.5rem; margin-bottom: 0; text-align: center;">
                             <div style="margin-bottom: 0;">
@@ -186,7 +275,7 @@
                         <li>Advanced Calculus & Integration</li>
                     </ul>
                 </article>
-                <article>                     
+                <article>                      
                     <header><strong>HSC Physics</strong></header>
                     <p>Years 11 & 12</p>
                     <ul>
@@ -228,7 +317,7 @@
                 <strong>Advanced Maths</strong>
             </header>
             <p>Full HSC style paper.</p>
-           <a href="Resources/maths-advanced-sample.pdf" download="Andre_M_Tutoring_Advanced_Maths_Sample.pdf" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; padding: 0.75rem; background-color: #3b7a3b !important; color: #ffffff !important; text-align: center; border-radius: 4px; text-decoration: none; font-weight: bold;">
+            <a href="Resources/maths-advanced-sample.pdf" download="Andre_M_Tutoring_Advanced_Maths_Sample.pdf" target="_blank" rel="noopener noreferrer" class="btn-premium">
                 Download PDF
             </a>
         </article>
@@ -237,7 +326,7 @@
                 <strong>Extension 1</strong>
             </header>
             <p>Full HSC style paper.</p>
-            <a href="Resources/maths-ext1-sample.pdf" download="Andre_M_Tutoring_Extension1_Maths_Sample.pdf" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; padding: 0.75rem; background-color: #3b7a3b !important; color: #ffffff !important; text-align: center; border-radius: 4px; text-decoration: none; font-weight: bold;">
+            <a href="Resources/maths-ext1-sample.pdf" download="Andre_M_Tutoring_Extension1_Maths_Sample.pdf" target="_blank" rel="noopener noreferrer" class="btn-premium">
                 Download PDF
             </a>
         </article>
@@ -246,7 +335,7 @@
                 <strong>HSC Physics</strong>
             </header>
             <p>Full HSC style paper.</p>
-            <a href="Resources/physics-sample.pdf" download="Andre_M_Tutoring_Physics_Sample.pdf" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; padding: 0.75rem; background-color: #3b7a3b !important; color: #ffffff !important; text-align: center; border-radius: 4px; text-decoration: none; font-weight: bold;">
+            <a href="Resources/physics-sample.pdf" download="Andre_M_Tutoring_Physics_Sample.pdf" target="_blank" rel="noopener noreferrer" class="btn-premium">
                 Download PDF
             </a>
         </article>
@@ -333,8 +422,8 @@
                     What levels of HSC Maths do you tutor online?
                 </summary>
                 <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-color); line-height: 1.7; padding-left: 1rem;">
-                    I provide comprehensive online Zoom tutoring for all NESA senior mathematics courses, 
-                    including <strong>HSC Standard Maths</strong>, <strong>HSC Advanced Maths</strong>, 
+                    I provide comprehensive online Zoom tutoring for all NESA mathematics courses, 
+                    including  <strong>Year 7–10 Maths</strong>, <strong>HSC Standard Maths</strong>, <strong>HSC Advanced Maths</strong>, 
                     <strong>Extension 1 Maths</strong>, and <strong>Extension 2 Maths</strong>.
                 </p>
             </details>
@@ -360,7 +449,7 @@
                     What payment methods do you accept for tutoring sessions?
                 </summary>
                 <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-color); line-height: 1.7; padding-left: 1rem;">
-                    Payments for <strong>private tutoring sessions</strong> can be made securely online via bank transfer or credit card prior to the lesson.
+                    Payments for <strong>private tutoring sessions</strong> can be made securely online via bank transfer prior to the lesson.
                 </p>
             </details>
         </article>

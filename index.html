@@ -111,7 +111,7 @@
         }
 
         #faq {
-            scroll-margin-top: 50px !important;
+            scroll-margin-top: 35px !important;
         }
 
         #resources {
@@ -508,12 +508,12 @@
 
             <div style="background-color: #ffffff; border: 1px solid #94a3b8; padding: 1.25rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 4px 14px rgba(0,0,0,0.15);">
                 <p style="margin: 0 0 0.25rem 0; font-weight: 700; font-size: 0.95rem; color: #0f172a;">Have a specific question?</p>
-<span style="color: #0f172a; font-weight: 700; font-size: 0.95rem; display: inline-block;">
-    Send me an email &rarr; 
-    <a href="mailto:andremtutoring@gmail.com" style="color: #1d4ed8; text-decoration: underline; font-weight: 700;">
-        andremtutoring@gmail.com
-    </a>
-</span>
+                <span style="color: #0f172a; font-weight: 700; font-size: 0.95rem; display: inline-block;">
+                    Send me an email &rarr; 
+                    <a href="mailto:andremtutoring@gmail.com" style="color: #1d4ed8; text-decoration: underline; font-weight: 700;">
+                        andremtutoring@gmail.com
+                    </a>
+                </span>
             </div>
         </div>
 
@@ -535,7 +535,8 @@
                 </summary>
                 <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
                     Yes, I teach both the <strong>Year 11 Preliminary Physics</strong> modules 
-                    and the <strong>Year 12 HSC Physics</strong> curriculum.                </p>
+                    and the <strong>Year 12 HSC Physics</strong> curriculum.
+                </p>
             </details>
 
             <details name="faq-accordion" style="background-color: #ffffff; border: 1px solid #b0b8c4; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1.25rem 1.5rem; margin: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
@@ -559,14 +560,37 @@
         </div>
     </div>
 </section>
-    <footer class="container">
-        <hr>
-        <p style="text-align: center;">
-            © 2026 Andre Tutoring. All rights reserved.
-        </p>
-    </footer>
 
-    <script>
+<footer style="max-width: 1200px; margin: 3rem auto 1.5rem auto; padding: 0 1rem; width: 100%; box-sizing: border-box;">
+    
+    <style>
+        @keyframes arrowBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .back-to-top-btn:hover {
+            transform: translateY(-3px) !important;
+            background-color: #1d4ed8 !important;
+            box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4) !important;
+        }
+        .back-to-top-btn:hover .arrow-icon {
+            animation: arrowBounce 0.6s infinite ease-in-out;
+        }
+    </style>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 1rem; margin-top: -1.7rem;">
+        <a href="#" class="back-to-top-btn" style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; background-color: #2563eb; padding: 0.45rem 1rem; border-radius: 20px; text-decoration: none; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25); transition: all 0.25s ease-in-out;">
+            <span class="arrow-icon" style="font-size: 0.9rem; line-height: 1; display: inline-block;">↑</span> Back to top
+        </a>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 0 0 0.75rem 0;">
+
+    <p style="text-align: center; margin: 0; font-size: 0.85rem; color: #64748b;">
+        © 2026 Andre Tutoring. All rights reserved.
+    </p>
+</footer>
+<script>
         document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
             e.preventDefault();
             window.scrollTo({

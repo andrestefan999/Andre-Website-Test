@@ -110,6 +110,18 @@
             scroll-margin-top: 30px !important;
         }
 
+        #faq {
+            scroll-margin-top: 50px !important;
+        }
+
+        #resources {
+            scroll-margin-top: -80px !important;
+        }
+
+        #schedule-session {
+            scroll-margin-top: 15px !important;
+        }
+
         section, article {
             scroll-margin-top: 0px !important;
         }
@@ -315,156 +327,242 @@
 
 <div id="resources" style="display: block; height: 0; margin-top: -100px; padding-top: 60px; visibility: hidden;"></div>
 
-<section style="max-width: 1200px; margin: 4rem auto 0 auto; padding: 2rem 1rem; background-color: #f4f9f4; border-radius: 8px; border: 1px solid #d0e1d0; box-sizing: border-box;">
-    <h2 style="text-align: center; color: #2e5a2e;">Free HSC Practice Papers</h2>
-    <div class="grid">
-        <article style="background-color: #ffffff; border: 1px solid #c2dec2; box-shadow: 0 4px 8px rgba(0,0,0,0.04);">
-            <header style="background-color: #e2f0e2; border-bottom: 1px solid #c2dec2; color: #2e5a2e;">
-                <strong>Advanced Maths</strong>
-            </header>
-            <p>Full HSC style paper.</p>
-            <a href="Resources/maths-advanced-sample.pdf" download="Andre_M_Tutoring_Advanced_Maths_Sample.pdf" target="_blank" rel="noopener noreferrer" class="btn-premium">
-                Download PDF
-            </a>
+<section style="max-width: 1200px; margin: 3rem auto -1rem auto; padding: 2.5rem 1.5rem; border-radius: 12px; box-sizing: border-box; width: 100%; position: relative; overflow: hidden; background: linear-gradient(135deg, #3b6e3b 0%, #325e4c 50%, #244b4b 100%); border: 1px solid #2e5a5a; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; color: #ffffff; font-weight: 700; margin-bottom: 2rem; text-shadow: 0 2px 4px rgba(0,0,0,0.15);">Free HSC Practice Papers</h2>
+    
+    <div class="grid" style="gap: 1.5rem;">
+        <article style="background-color: #ffffff; border: 1px solid #94a3b8; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <header style="background-color: #f1f5f9; border-bottom: 1px solid #cbd5e1; color: #0f172a; padding: 1rem; text-align: center;">
+                    <strong style="font-size: 1.1rem; color: #0f172a;">Advanced Maths</strong>
+                </header>
+                <p style="padding: 1.25rem 1rem 0.5rem 1rem; color: #334155; margin: 0; text-align: center;">Full HSC style paper.</p>
+            </div>
+            <div style="padding: 1rem; text-align: center;">
+                <a href="Resources/maths-advanced-sample.pdf" 
+                   download="Andre_M_Tutoring_Advanced_Maths_Sample.pdf" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-premium" 
+                   style="display: inline-block; width: 100%; box-sizing: border-box;"
+                   onclick="let btn=this; btn.style.pointerEvents='none'; btn.style.opacity='0.6'; btn.innerText='Downloading...'; setTimeout(()=>{ btn.style.pointerEvents='auto'; btn.style.opacity='1'; btn.innerText='Download PDF'; }, 3000);">
+                    Download PDF
+                </a>
+            </div>
         </article>
-        <article style="background-color: #ffffff; border: 1px solid #c2dec2; box-shadow: 0 4px 8px rgba(0,0,0,0.04);">
-            <header style="background-color: #e2f0e2; border-bottom: 1px solid #c2dec2; color: #2e5a2e;">
-                <strong>Extension 1</strong>
-            </header>
-            <p>Full HSC style paper.</p>
-            <a href="Resources/maths-ext1-sample.pdf" download="Andre_M_Tutoring_Extension1_Maths_Sample.pdf" target="_blank" rel="noopener noreferrer" class="btn-premium">
-                Download PDF
-            </a>
+
+        <article style="background-color: #ffffff; border: 1px solid #94a3b8; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <header style="background-color: #f1f5f9; border-bottom: 1px solid #cbd5e1; color: #0f172a; padding: 1rem; text-align: center;">
+                    <strong style="font-size: 1.1rem; color: #0f172a;">Extension 1</strong>
+                </header>
+                <p style="padding: 1.25rem 1rem 0.5rem 1rem; color: #334155; margin: 0; text-align: center;">Full HSC style paper.</p>
+            </div>
+            <div style="padding: 1rem; text-align: center;">
+                <a href="Resources/maths-ext1-sample.pdf" 
+                   download="Andre_M_Tutoring_Extension1_Maths_Sample.pdf" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-premium" 
+                   style="display: inline-block; width: 100%; box-sizing: border-box;"
+                   onclick="let btn=this; btn.style.pointerEvents='none'; btn.style.opacity='0.6'; btn.innerText='Downloading...'; setTimeout(()=>{ btn.style.pointerEvents='auto'; btn.style.opacity='1'; btn.innerText='Download PDF'; }, 3000);">
+                    Download PDF
+                </a>
+            </div>
         </article>
-        <article style="background-color: #ffffff; border: 1px solid #c2dec2; box-shadow: 0 4px 8px rgba(0,0,0,0.04);">
-            <header style="background-color: #e2f0e2; border-bottom: 1px solid #c2dec2; color: #2e5a2e;">
-                <strong>HSC Physics</strong>
-            </header>
-            <p>Full HSC style paper.</p>
-            <a href="Resources/physics-sample.pdf" download="Andre_M_Tutoring_Physics_Sample.pdf" target="_blank" rel="noopener noreferrer" class="btn-premium">
-                Download PDF
-            </a>
+
+        <article style="background-color: #ffffff; border: 1px solid #94a3b8; box-shadow: 0 6px 16px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <header style="background-color: #f1f5f9; border-bottom: 1px solid #cbd5e1; color: #0f172a; padding: 1rem; text-align: center;">
+                    <strong style="font-size: 1.1rem; color: #0f172a;">HSC Physics</strong>
+                </header>
+                <p style="padding: 1.25rem 1rem 0.5rem 1rem; color: #334155; margin: 0; text-align: center;">Full HSC style paper.</p>
+            </div>
+            <div style="padding: 1rem; text-align: center;">
+                <a href="Resources/physics-sample.pdf" 
+                   download="Andre_M_Tutoring_Physics_Sample.pdf" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-premium" 
+                   style="display: inline-block; width: 100%; box-sizing: border-box;"
+                   onclick="let btn=this; btn.style.pointerEvents='none'; btn.style.opacity='0.6'; btn.innerText='Downloading...'; setTimeout(()=>{ btn.style.pointerEvents='auto'; btn.style.opacity='1'; btn.innerText='Download PDF'; }, 3000);">
+                    Download PDF
+                </a>
+            </div>
         </article>
     </div>
-    <p style="text-align: center; margin-top: 1.5rem; font-size: 0.95rem; color: #2e5a2e;">
+
+    <p style="text-align: center; margin-top: 0rem; margin-bottom: 0; font-size: 0.95rem; color: #e2f0e2;">
         <em>Want more full trial exams and worked solutions? Book a session to get access to more.</em>
     </p>
 </section>
 
-<section style="max-width: 1200px; margin: 4rem auto 0 auto; padding: 2.5rem 2rem; background-color: #f2f7f2; border-radius: 12px; border: 1px solid #cfe2cf; box-sizing: border-box;">
-        <div class="grid testimonial-grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.6fr 1.4fr;">
-            <div class="mobile-hide-img" style="max-width: 260px; width: 100%; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(46,90,46,0.08); display: flex;">
-                <img src="Images/Maths.jpg" alt="Mathematics Concepts Graphic" style="width: 100%; height: auto; object-fit: cover; margin: 0;">
-            </div>
-            <div style="display: flex; flex-direction: column; justify-content: center; gap: 2rem; width: 100%;">
-                <h2 style="margin-top: 0; margin-bottom: 0.5rem; color: #2e5a2e; font-weight: 700;">What Students Say</h2>
-                <div style="border-left: 4px solid #3b7a3b; padding-left: 1.5rem; margin: 0; width: 100%; box-sizing: border-box;">
-                    <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; color: #234423; margin-bottom: 0.5rem;">
-                        "I was able to score a 91 (band 6) in physics due to Andre's tutoring. It really helped me understand concepts I was struggling with."
-                    </p>
-                    <footer style="color: #557a55; font-weight: 600; font-size: 0.95rem;">— Sarah, Year 11</footer>
-                </div>
-                <div style="border-left: 4px solid #3b7a3b; padding-left: 1.5rem; margin: 0; width: 100%; box-sizing: border-box;">
-                    <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; color: #234423; margin-bottom: 0.5rem;">
-                        "Andre helped me achieve rank 1 is maths advanced, I couldn't have done it without the help!"
-                    </p>
-                    <footer style="color: #557a55; font-weight: 600; font-size: 0.95rem;">— Marcus, Year 12</footer>
+<div style="width: 100%; overflow: hidden; margin-top: 3rem;">
+    <section style="position: relative; padding: 5rem 0 !important; background-image: url('Images/beach.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; width: 100%; box-sizing: border-box;">
+        <div class="container" style="max-width: 1200px; padding: 0 1rem;">
+            <div class="glass-panel" style="padding: 2.5rem 2rem; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);">
+                <div class="grid testimonial-grid" style="align-items: center; gap: 3rem; grid-template-columns: 0.6fr 1.4fr;">
+                    
+                    <div class="mobile-hide-img" style="max-width: 260px; width: 100%; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(46,90,46,0.12); display: flex;">
+                        <img src="Images/Maths.jpg" alt="Mathematics Concepts Graphic" style="width: 100%; height: auto; object-fit: cover; margin: 0rem;">
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; justify-content: center; gap: 2rem; width: 100%;">
+                        <h2 style="margin-top: 0; margin-bottom: 0.5rem; color: #133b3a; font-weight: 700;">What Students Say</h2>
+                        
+                        <div style="border-left: 4px solid #133b3a; padding-left: 1.5rem; margin: 0; width: 100%; box-sizing: border-box;">
+                            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; color: #133b3a; margin-bottom: 0.5rem;">
+                                "I was able to score a 91 (band 6) in physics due to Andre's tutoring. It really helped me understand concepts I was struggling with."
+                            </p>
+                            <footer style="color: #133b3a; font-weight: 600; font-size: 0.95rem;">— Sarah, Year 11</footer>
+                        </div>
+                        
+                        <div style="border-left: 4px solid #133b3a; padding-left: 1.5rem; margin: 0; width: 100%; box-sizing: border-box;">
+                            <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; color: #133b3a; margin-bottom: 0.5rem;">
+                                "Andre helped me achieve rank 1 is maths advanced, I couldn't have done it without the help!"
+                            </p>
+                            <footer style="color: #133b3a; font-weight: 600; font-size: 0.95rem;">— Marcus, Year 12</footer>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="contact" class="contact-section-wrapper" style="margin-top: 2rem; width: 100%; overflow: hidden;">
-        <div class="container"> 
-            <hgroup>
-                <h2>Get Started Today</h2>
-                <p>Ready to begin your tutoring journey? Either send me an email or schedule a session directly below.</p>
-            </hgroup>
-            <div class="grid">
-                <article>
-                    <header style="padding-top: 1rem;">
-                        <h4>Contact Information</h4>
-                    </header>
-                    <p><strong>Email:</strong> <a href="mailto:andremtutoring@gmail.com">andremtutoring@gmail.com</a></p>
-                    <p><strong>Hours:</strong><br>
+</div>
+<section id="contact" class="contact-section-wrapper" style="max-width: 1200px; margin: 1rem auto 0 auto; padding: 2rem 2rem; background-color: #e5e7eb; border-radius: 12px; border: 1px solid #d1d5db; box-sizing: border-box; width: 100%;">
+    <div class="container" style="padding: 0;"> 
+        <hgroup style="margin-bottom: 2rem;">
+            <h2 style="color: #111827; font-weight: 700; margin-bottom: 0.5rem;">Get Started Today</h2>
+            <p style="color: #374151; font-size: 1.05rem; margin-bottom: -1rem;">Ready to begin your tutoring journey? Either send me an email or schedule a session directly below.</p>
+        </hgroup>
+        <div class="grid">
+            <article style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
+                <header style="padding-top: 1rem; background-color: #f3f4f6; border-bottom: 1px solid #d1d5db; color: #111827;">
+                    <h4 style="margin: 0; color: #111827;">Contact & Policy</h4>
+                </header>
+                <div style="padding: 0.5rem 0.75rem;">
+                    <p style="margin-bottom: 0.4rem;"><strong>Email:</strong> <a href="mailto:andremtutoring@gmail.com" style="color: #1e3a8a; text-decoration: underline;">andremtutoring@gmail.com</a></p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Hours:</strong><br>
                         Monday-Friday: 4PM - 11PM<br>
                         Weekends: 9AM - 11PM
                     </p>
-                </article>
-                <article>
-                    <header style="padding-top: 1rem;">
-                        <h4>Pricing</h4>
-                    </header>
-                    <p><strong>Individual Sessions:</strong> $60 per hour</p>
-                    <p><strong>First Session Half Price:</strong> $30 per hour</p>    
-                </article>        
-                <article style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-                    <img src="Images/Setup.jpg" alt="Online Tutoring Workspace" style="width: 100%; height: 100%; object-fit: cover; margin: 0;">
-                </article>
-            </div>
-        </div> 
-    </section>
+                    <p style="margin-bottom: 0.25rem;"><strong>Reschedule:</strong> Up to 3 days prior.</p>
+                    <p style="margin-bottom: 0.25rem;"><strong>Cancellations:</strong> With less than 3 days 				notice are non-refundable.</p>
 
-<section id="schedule-session" style="position: relative; margin-top: 3rem; margin-bottom: 2rem; padding: 0; width: 100%; overflow: hidden;">
-        <div style="position: relative; z-index: 10; width: 100%; background: #ffffff; padding: 1rem 1.5rem; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom: 1px solid #cfe2cf; text-align: left; box-sizing: border-box; margin-bottom: -6.5rem;">
-            <h2 style="margin: 0; color: #000000; font-size: 1.6rem; font-weight: 700;">Schedule Your Session</h2>
+                    </p>
+                </div>
+            </article>
+            
+            <article style="background-color: #ffffff; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0;">
+                <header style="padding-top: 1rem; background-color: #f3f4f6; border-bottom: 1px solid #d1d5db; color: #111827;">
+                    <h4 style="margin: 0; color: #111827;">Pricing & Payment</h4>
+                </header>
+                <div style="padding: 0.25rem 0.75rem;">
+                    <p style="margin-bottom: 0.4rem;"><strong>Individual Sessions:</strong> $60/hour</p>
+                    <p style="margin-bottom: 0.75rem;"><strong>First Session:</strong> $30/hour</p>
+                    
+                    <div style="background-color: #eff6ff; border-left: 4px solid #3b82f6; padding: 0.6rem 0.75rem; border-radius: 4px; margin-top: 0.5rem;">
+                        <p style="margin-bottom: 0.25rem; font-size: 0.9rem; color: #1e40af;"><strong>Payment by Bank Transfer:</strong></p>
+                        <p style="margin-bottom: 0.15rem; font-size: 0.9rem; color: #1e40af;"><strong>BSB:</strong> 062-155</p>
+                        <p style="margin-bottom: 0.4rem; font-size: 0.9rem; color: #1e40af;"><strong>Account:</strong> 1074 8324</p>
+                        <p style="margin: 0; font-size: 0.85rem; line-height: 1.35; color: #1e3a8a; font-weight: 800; text-decoration: underline;">
+                            MUST BE COMPLETED PRIOR TO THE SESSION
+                        </p>
+                    </div>
+                </div>
+            </article>        
+            
+            <article style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #d1d5db; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 0; min-height: 100%;">
+                <img src="Images/Setup.jpg" alt="Online Tutoring Workspace" style="width: 100%; height: 100%; object-fit: cover; margin: 0; display: block;">
+            </article>
         </div>
-        <article style="position: relative; z-index: 1; padding: 4rem 1.5rem 1.5rem 1.5rem; border: 1px solid #cfe2cf; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02); background-color: var(--pico-background-color); margin-top: 0;">
+    </div> 
+
+    <div id="schedule-session" style="width: 100%; margin-top: 3rem; overflow: hidden; box-sizing: border-box; border-radius: 12px; border: 1px solid #d1d5db;">
+        <div style="background-color: #f3f4f6; padding: 1.25rem 2rem; border-bottom: 1px solid #d1d5db;">
+            <h3 style="margin: 0; color: #111827; font-size: 1.4rem; font-weight: 700;">Schedule Your Session</h3>
+            <p style="margin: 0.25rem 0 0 0; color: #111827; font-size: 0.95rem;">Select an available time slot below to lock in your lesson.</p>
+        </div>
+
+        <article style="padding: 0rem; border: none; border-radius: 0; background-color: #ffffff; margin: 0;">
             <div class="calendly-inline-widget" 
                  data-url="https://calendly.com/andremtutoring/60min?hide_landing_page_details=1" 
-                 style="min-width:320px; height:680px; width:100%;">
+                 style="min-width:380px; height:730px; width:100%;">
             </div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </article>
-    </section>
+    </div>
+</section>
 
-    <section id="faq" style="margin-top: -2rem; margin-bottom: -4rem; width: 100%; overflow: hidden;">
-        <div style="background-color: #e2f0e2; padding: 1.5rem 2.5rem; border-top-left-radius: var(--border-radius); border-top-right-radius: var(--border-radius); border-left: 5px solid #3b7a3b;">
-            <h2 style="margin: 0; text-align: left; font-weight: 700; color: #3b7a3b;">Frequently Asked Questions</h2>
+<section id="faq" style="max-width: 1200px; margin: 3rem auto; padding: 0 1rem; width: 100%; box-sizing: border-box;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; align-items: stretch;">
+        
+        <div style="position: relative; background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(15, 23, 42, 0.9)), url('Images/Setup.jpg') center/cover; padding: 2.5rem 2rem; border-radius: 12px; color: #ffffff; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); display: flex; flex-direction: column; justify-content: space-between; min-height: 480px;">
+            <div>
+                <span style="background-color: rgba(255, 255, 255, 0.2); padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #ffffff;">Got Questions?</span>
+                <h2 style="margin: 1rem 0 0.75rem 0; font-size: 2rem; font-weight: 700; color: #ffffff; line-height: 1.2;">Frequently Asked Questions</h2>
+                <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.6; margin: 0;">Everything you need to know about HSC Maths, Physics, and how online Zoom sessions work.</p>
+            </div>
+
+            <div style="background-color: #ffffff; border: 1px solid #94a3b8; padding: 1.25rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 4px 14px rgba(0,0,0,0.15);">
+                <p style="margin: 0 0 0.25rem 0; font-weight: 700; font-size: 0.95rem; color: #0f172a;">Have a specific question?</p>
+<span style="color: #0f172a; font-weight: 700; font-size: 0.95rem; display: inline-block;">
+    Send me an email &rarr; 
+    <a href="mailto:andremtutoring@gmail.com" style="color: #1d4ed8; text-decoration: underline; font-weight: 700;">
+        andremtutoring@gmail.com
+    </a>
+</span>
+            </div>
         </div>
-        <article style="padding: 1.5rem 2.5rem 2.5rem 2.5rem; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: var(--border-radius); border-bottom-right-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); margin-top: 0;">
-            <details style="border-bottom: 1px solid #cfe2cf; padding: 1.5rem 0; margin: 0;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--heading-color); font-size: 1.1rem;">
-                    What levels of HSC Maths do you tutor online?
+
+        <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; max-height: 480px; overflow-y: auto; padding-right: 0.25rem;">
+            
+            <details name="faq-accordion" style="background-color: #ffffff; border: 1px solid #b0b8c4; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1.25rem 1.5rem; margin: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <summary style="font-weight: 700; cursor: pointer; color: #0f172a; font-size: 1.05rem;">
+                    What levels of Maths do you tutor online?
                 </summary>
-                <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-color); line-height: 1.7; padding-left: 1rem;">
-                    I provide comprehensive online Zoom tutoring for all NESA mathematics courses, 
-                    including  <strong>Year 7–10 Maths</strong>, <strong>HSC Standard Maths</strong>, <strong>HSC Advanced Maths</strong>, 
+                <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
+                    I provide comprehensive online Zoom tutoring for <strong>Year 7–10 Maths</strong>, <strong>HSC Standard Maths</strong>, <strong>HSC Advanced Maths</strong>, 
                     <strong>Extension 1 Maths</strong>, and <strong>Extension 2 Maths</strong>.
                 </p>
             </details>
-            <details style="border-bottom: 1px solid #cfe2cf; padding: 1.5rem 0; margin: 0;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--heading-color); font-size: 1.1rem;">
-                    Do you cover the Year 11 and Year 12 Physics syllabus?
+
+            <details name="faq-accordion" style="background-color: #ffffff; border: 1px solid #b0b8c4; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1.25rem 1.5rem; margin: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <summary style="font-weight: 700; cursor: pointer; color: #0f172a; font-size: 1.05rem;">
+                    Do you cover Year 11 and Year 12 Physics?
                 </summary>
-                <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-color); line-height: 1.7; padding-left: 1rem;">
-                    Yes, my online physics tutoring covers both the <strong>Year 11 Preliminary Physics</strong> modules 
-                    and the <strong>Year 12 HSC Physics</strong> curriculum, focusing heavily on exam preparation and past papers.
+                <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
+                    Yes, I teach both the <strong>Year 11 Preliminary Physics</strong> modules 
+                    and the <strong>Year 12 HSC Physics</strong> curriculum.                </p>
+            </details>
+
+            <details name="faq-accordion" style="background-color: #ffffff; border: 1px solid #b0b8c4; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1.25rem 1.5rem; margin: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <summary style="font-weight: 700; cursor: pointer; color: #0f172a; font-size: 1.05rem;">
+                    How do online lessons help improve results?
+                </summary>
+                <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
+                    My structured <strong>exam preparation</strong> focuses on breaking down past papers, and developing exam techniques to <strong>improve results</strong>.
                 </p>
             </details>
-            <details style="border-bottom: 1px solid #cfe2cf; padding: 1.5rem 0; margin: 0;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--heading-color); font-size: 1.1rem;">
-                    How do your online lessons help improve HSC results and ATAR scores?
+
+            <details name="faq-accordion" style="background-color: #ffffff; border: 1px solid #b0b8c4; border-left: 4px solid #2563eb; border-radius: 8px; padding: 1.25rem 1.5rem; margin: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <summary style="font-weight: 700; cursor: pointer; color: #0f172a; font-size: 1.05rem;">
+                    What payment methods do you accept?
                 </summary>
-                <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-color); line-height: 1.7; padding-left: 1rem;">
-                    My structured <strong>HSC exam preparation</strong> focuses heavily on mastering NESA marking guidelines, breaking down complex past papers, and optimising exam technique to maximise your internal school ranks and final <strong>ATAR results</strong>.
-                </p>
-            </details>
-            <details style="border-bottom: 1px solid #cfe2cf; padding: 1.5rem 0; margin: 0;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--heading-color); font-size: 1.1rem;">
-                    What payment methods do you accept for tutoring sessions?
-                </summary>
-                <p style="margin-top: 1rem; margin-bottom: 0; color: var(--text-color); line-height: 1.7; padding-left: 1rem;">
+                <p style="margin-top: 0.85rem; margin-bottom: 0; color: #334155; line-height: 1.6; padding-left: 0.75rem; border-left: 3px solid #2563eb; font-size: 0.95rem;">
                     Payments for <strong>private tutoring sessions</strong> can be made securely online via bank transfer prior to the lesson.
                 </p>
             </details>
-        </article>
-    </section>
 
+        </div>
+    </div>
+</section>
     <footer class="container">
         <hr>
         <p style="text-align: center;">
-            © 2026 Andre Tutoring.
+            © 2026 Andre Tutoring. All rights reserved.
         </p>
     </footer>
 

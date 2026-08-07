@@ -111,6 +111,13 @@ section, article {
     border-top: 1px solid #e2e8f0;
 }
 
+h1, 
+html[data-theme="light"] h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    color: #111827 !important;
+    font-weight: 600 !important;
+}
+
 .full-width-nav a {
     color: #2e7d32;          
     font-weight: bold;

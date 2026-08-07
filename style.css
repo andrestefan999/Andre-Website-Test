@@ -41,6 +41,12 @@ header nav a {
     transform: translateY(-5px); 
 }
 
+h1 {
+    font-family: inherit !important;
+    color: #1a331a !important; /* Matches your other dark headings */
+    font-weight: 700 !important;
+}
+
 article {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
     border: none !important; 

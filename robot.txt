@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andretutoring.com/sitemap.xml

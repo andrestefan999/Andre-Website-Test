@@ -6,12 +6,33 @@
         position: relative;
     }
 
-    /* --- Entrance Animations Removed to Maximize LCP & Page Speed --- */
-    header.full-width-nav,
-    body > div, 
-    body > section {
-        opacity: 1 !important;
+    /* --- Smooth Cascading Entrance Animation --- */
+    @keyframes subtleEntrance {
+        0% {
+            opacity: 0;
+            transform: translateY(24px) scale(0.995);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
     }
+
+    header.full-width-nav {
+        animation: subtleEntrance 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    body > div, body > section {
+        opacity: 0;
+        animation: subtleEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Staggered delays for a refined cascading load */
+    body > div:nth-of-type(1) { animation-delay: 0.15s; }
+    body > section:nth-of-type(1) { animation-delay: 0.25s; }
+    body > section:nth-of-type(2) { animation-delay: 0.35s; }
+    body > section:nth-of-type(3) { animation-delay: 0.45s; }
+    body > section:nth-of-type(4) { animation-delay: 0.55s; }
 
     /* --- Typography Polish --- */
     h1, h2, h3, h4 {
